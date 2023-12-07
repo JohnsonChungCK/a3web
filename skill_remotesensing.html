@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Remote Sensing</title>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+
+<!--This page introduces the company skillset in Remote Sensing-->
+<body>
+
+<!-- -----------------
+- Owner : Chi Kin Lok
+- Date  : Dec 6 (v3)
+- From  :  https://www.w3schools.com/css/css_navbar.asp; https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav;
+- Inspired by  : https://jessicamflemingc.github.io/JMLcartolytics/index.html; https://uniekm.github.io/PTBO/index.html; 
+			https://www.mappa.com.hk/
+- Adapted from : https://cklouislok.github.io/index.html
+------------------- -->
+<!--Create a header section, which incorporates a top navigation bar containing the company logo, links to the home, about us, 
+	skills/projects, and contact us pages-->
+<!--Adapted from Assignment 2 Personal Website-->
+<header>
+	<div class="bg-img">
+		<nav class="nav-headerbar">
+			<div class="nav-logodiv">
+				<a href="index.html" id="nav-logo">CEnGISolutions</a>
+			</div>
+			<ul class="menu-list">
+				<li class="menu-item">
+					<a href="index.html">Home</a>
+				</li>
+				<li class="menu-item">
+					<a href="aboutus.html">About Us</a>
+				</li>
+				<li class="menu-item">
+					<a class="active" href="index.html#specialties">Specialties</a>
+				</li>
+				<li class="menu-item">
+					<a href="contactus.html">Contact Us</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+<!--*** End Owner: Chi Kin Lok *** -->
+
+<!-- -----------------
+- Owner : Qianhui Hong
+- Date  : Nov 30 (v1)
+- From  : https://www.w3schools.com/html/html_images.asp
+------------------- -->
+<h1>Remote Sensing and Image Processing</h1>  <!--Title-->
+<div class="specialtiesGeneric">  <!--Follow class "specialtiesGeneric" css-->
+    <h2>Imagery Analysis</h2>  <!--Subtitle-->
+    <p>We specialize in collecting and interpreting satellite imagery to glean insights about the Earth's surface. Our analysis supports various critical applications, including environmental monitoring, effective natural resource management, urban planning, and the enhancement of agricultural practices.</p>
+    <p>For instance, we recently conducted a comprehensive study on land cover types using the Landsat 8 OLI image spanning from Lake Scugog to Bewdley in Southern Ontario. By recording the reflectance values across Bands 1 to 7 during the summer of 2019, we precisely characterized seven distinct land types. 
+        The resulting graph vividly illustrates the unique spectral behaviors exhibited by each land type, providing invaluable information for accurate identification, classification, and monitoring purposes.</p>
+    <img class="specialistimage" src="images/RSLandCoverReflectance.png" alt="Line Graph of Surface reflectance of various land types">  <!-- Link an image-->
+    <h3>Surface reflectance of various land types</h3> <!--caption-->
+
+    <h2>Geometric Correction</h2>  <!--Subtitle-->
+    <p>We specialize in establishing spatial relationships between the coordinate system of an image and a referenced geographic coordinate system, ensuring more accurate locations. This process involves employing various georeferencing techniques and resampling methods.</p>
+    <p>As an example, we recently conducted a manual georeferencing task by strategically placing ground control points. This process allowed us to perform geometric correction on a Landsat 5 TM imagery capturing Rice Lake in 1992. 
+        By aligning the image to the desired geographic coordinates, we ensured the accurate spatial representation of the area, enabling reliable analysis and comparison with other geographic data sets.</p>
+    <img class="specialistimage" src="images/GeoreferencingGCP.png" alt="Georeferencing using GCP">  <!-- Link an image-->
+    <h3>Georeferencing using GCP</h3> <!--caption-->
+
+    <h2>Image Filtering</h2>  <!--Subtitle-->
+    <p>Image filtering is a fundamental technique in image processing used to enhance, modify, or extract information from digital images. 
+        It involves applying mathematical operations to pixels within an image to achieve specific visual or analytical objectives. 
+        Filtering can help highlight certain features, reduce noise, or sharpen details. </p>  <!--Next paragraph-->
+    <p>In a recent analysis conducted in Stouffville, we explored the spectral profiles of SPOT imagery and its low-pass and high-pass filtered versions.
+        Here is the profile for high-pass imagery, represented using different lines: the original greyscale SPOT panchromatic image in red, while the 3 by 3 and 7 by 7 high-pass filtered images were represented by the green and blue lines, respectively.</p>
+    <p>This comparison showcased how the high-pass filtering techniques altered the spectral characteristics of the imagery, potentially emphasizing particular features or enhancing specific details for more focused analysis and interpretation.</p>
+    <img class="specialistimage" src="images/RSHighPassSpectral.png" alt="Spectral profiles of SPOT imagery and high-pass filtered versions in stouffville">  <!-- Link an image-->
+    <h3>Spectral profiles of SPOT imagery and high-pass filtered versions in stouffville</h3> <!--caption-->
+    
+    <button onclick="document.getElementById('myImage1').src='images/RSLowPass.PNG'">Check out the low-pass filtered image</button>   <!-- Click on button 'Check out the low-pass filtered image' to view 'RSLowPass.PNG'-->
+    <button onclick="document.getElementById('myImage1').src='images/RSOriginalGreyscale.PNG'">The original greyscale image of Stouffville</button>  <!-- Click on another button 'The original greyscale image of Stouffville' to view 'RSOriginalGreyscale.PNG'-->
+    <button onclick="document.getElementById('myImage1').src='images/RSHighPass.PNG'">Check out the high-pass filtered image</button>
+    <img id="myImage1" src="images/RSOriginalGreyscale.PNG" alt="Greyscale">  <!-- The image showing on screen after refreshing--> <!--The images are in frame id="myImage1"-->
+
+    <h4>Unresolved issue? Reach out to explore our comprehensive range of remote sensing services and cutting-edge techniques!</h4>
+
+    
+    <!--*** End Owner: Qianhui Hong ***-->
+
+<!-- -----------------
+- Owner : Chun Kit Chung
+- Date  : Nov 20 (v1)
+- From  : https://www.w3schools.com/js/js_intro.asp
+------------------- -->
+<!-- User can click the buttons to show two different images. It is inspired by W3Cshool -->
+<button onclick="document.getElementById('myImage').src='images/RS_true_color.jpg'">This a TRUE color band combination of Landsat 8 image.</button>  <!-- Click on button 'This a TRUE color band combination of Landsat 8 image.' to view 'RS_true_color.jpg'-->
+<button onclick="document.getElementById('myImage').src='images/RS_false_color.jpg'">This a FALSE color band combination of Landsat 8 image.</button>
+<img id="myImage" src="images/RS_true_color.jpg" alt="True Color"> <!-- The image showing on screen after refreshing--> <!--The images are in frame id="myImage"-->
+
+<!--*** End Owner: Chun Kit Chung *** -->
+<!--Javascript End-->
+</div>
+
+<!--Create a standardized footer to be used across pages -->
+<!-- -----------------
+- Owner : King Hei Tam 
+- Date  : Dec 1 (v1)
+- From  : 
+------------------- -->
+<footer>
+	<h2>Contact Us</h2>
+	<p class = "footertext">Telephone: 123-456-7890.</p>
+	<p class = "footertext">Email: info@cengisolutions.com</p>
+</footer>
+<!--*** End Owner: King Hei Tam  *** --> 
+
+</body>
+</html>

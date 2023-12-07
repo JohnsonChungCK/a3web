@@ -1,0 +1,504 @@
+/***************** 
+* Owner : Qianhui Hong
+* Date  : Dec 5 (v1)
+* From  : https://www.w3schools.com/html/html_intro.asp
+******************/
+/*Setting generic font family and size for the entire website */
+* {
+	font-family: Tahoma;
+	font-size: 14px;
+	box-sizing: border-box;
+	margin:0%
+}
+
+/*Setting webpage background color and margin*/
+body {
+	background-color: #ffffff;
+	margin: 0px;
+}
+
+/*Setting generic padding of all div elements for better visual effect*/
+div {
+	/*margin: auto;*/
+	padding: 10px;
+	/*hide content when scale is too small*/
+	overflow: hidden;
+}
+
+/*Setting generic style for Heading 1; setting font size to absolute values*/
+/*Left and right margins modified to allow sufficient reading space from the left and right margins of the browser's window; 
+/*top and bottom margins are set to create gaps between the previous and subsequent sections*/
+h1 {
+	font-size: 30px;
+	font-weight: 900;
+	padding: 10px;
+	margin: 30px 0px 10px;
+	text-align: center;
+}
+
+h2 {
+	font-size: 20px;
+	font-weight: bold;
+	padding: 10px;
+	text-align: center;
+	margin: 10px;
+}
+
+h3 {
+	font-size: 15px;
+	font-weight: bold;	
+	text-align: center;
+	margin: 10px;
+}
+
+h4 {
+	font-size: 14px;
+	text-align: center;
+	padding: 12px;
+	margin: 10px;
+}
+
+p {
+	font-size: 14px;
+	margin: 10px 10px 20px;
+	text-align: justify;
+}
+
+/*Setting generic format for all hyperlinks in the website: remove underline*/
+a {
+	text-decoration: none;
+}
+
+/*Image formatting*/
+img {					
+	max-width: 100%;
+	display: block;
+	margin: auto;
+}
+
+/*Setting font style for each specific class*/
+.center {
+	text-align: center;
+}
+
+.leftalign {
+	text-align: left;
+}
+/* End Owner: Qianhui Hong */
+/***************** 
+* Owner : Chun Kit Chung
+* Date  : Dec 3 (v1)
+* From  : https://www.w3schools.com/cssref/css_units.php
+******************/
+/* Set the image size in specialist pages */
+.specialistimage {
+	display: block;
+  	margin-left: auto;
+  	margin-right: auto;
+  	width: auto;
+	height: auto;
+}
+/* End Owner: Chun Kit Chung */
+
+/***************** 
+Owner : Chun Kit Chung
+Date  : Dec 6 (v1)
+This CSS is inspired by W3School
+******************/
+/*Setting background color of header section, to distinguish from the main content of the website*/
+.bg-img {
+	background-image: url("images/header_2_crop_effect.JPG");
+	min-height: 350px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+/* End Owner: Chun Kit Chung */
+
+/*Navigation bar formatting*/
+/***************** 
+* Owner : Chi Kin Lok
+* Date  : Nov 18 (v1)
+* From  : https://www.w3schools.com/css/css_navbar.asp; https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav
+* Inspired by: https://jessicamflemingc.github.io/JMLcartolytics/index.html; https://uniekm.github.io/PTBO/index.html; 
+			https://www.mappa.com.hk/
+* Adapted from: https://cklouislok.github.io/index.html
+******************/
+/*NavBar design inspired by W3Schools, Fleming GIS Collaborative Project Open House 2023 Groups #2308, 2311, 2312 and 2315.*/
+/*To seperate left i.e. name, and right i.e. menu, items from each other*/
+/*Adapted from Chi Kin Lok's Assignment 2 Personal Website*/
+.nav-headerbar {
+	display: flex;
+	flex-wrap:wrap;
+	overflow: hidden;
+	justify-content: space-between;
+	width: auto;
+	height: auto;
+	align-items: center;
+	padding: 0px 2vw;
+}
+
+/*Formatting top-left company logo*/
+.nav-logodiv {
+	padding: 0px;
+}
+
+/*Font family picked from CSS Web Safe Fonts listed by W3School: https://www.w3schools.com/cssref/css_websafe_fonts.php.*/ 
+/*Aim is to pick a easy-to-read and vibrant font type*/
+/*Color picked from Google's RGB Color Picker*/
+a#nav-logo {
+	font-family: cursive;
+	font-size: 50px;
+	color: rgb(42, 30, 6)
+}
+
+/*To remove the default list style and set the format for the menu, i.e. Home and More About me*/
+ul.menu-list {  
+	list-style-type: none;
+	padding: 10px;
+	overflow: hidden;
+}
+
+/*Arrange items of the NavBar menu horizontally; the list was arranged vertically by default*/
+.menu-item {
+	float: left;
+}
+
+/*Display: block is implemented to extend the top and bottom margin of the background of the item to the top of page and bottom of header section;*/
+/*and create clickable link for the entire block*/
+/*Formatting NavBar menu items*/
+.menu-item a {
+	display: block;
+	font-size: 18px;
+	color: #5f7114;
+	padding: 20px;
+	font-weight: bold;
+	border-radius: 45px;
+}
+
+/*Setting display style when hovering mouse on NavBar items*/
+/*Color picked from Google's RGB Color Picker*/
+.menu-item :hover {
+	background-color: #5f7114;
+	color: #000000;
+	font-style: italic;
+	text-decoration: underline;
+}
+
+/*Setting display style for the active link i.e. current webpage location at the NavBar menu*/
+.menu-item a.active {
+	background-color: rgb(205, 213, 91);
+	font-weight: bold;
+}
+/* End Owner: Chi Kin Lok */
+
+/***************** 
+* Owner : King Hei Tam
+* Date  : Dec 3
+* From  : https://github.com/RamziBach/Learn-CSS-Grid---A-13-Minute-Deep-Dive/blob/main/style2.css
+CSS to make the header + navigation bar and main body responsive using media queries.
+Setting main content to be displayed in grid.
+Grid made responsive using code inspired from https://github.com/RamziBach/Learn-CSS-Grid---A-13-Minute-Deep-Dive/blob/main/style2.css 
+******************/
+.gridlayout {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+	grid-row: auto;
+	justify-content: center;
+	gap: 10px 0px;
+}
+
+/* For the Specialties section on index page */
+#gridlayoutSpec {
+	grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+	gap: 10px 50px;
+}
+
+/* For the founders section in the about us page */
+.gridlayout5Columns {
+	grid-template-columns: repeat(auto-fit, minmax(250px, 2fr));
+}
+
+/* For nav-bar */
+@media (max-width: 1060px) {
+	.menu-item a{
+		color:#ffffff;  
+	}
+}
+
+/* For nav-bar */
+@media (max-width: 1060px) {
+	.nav-headerbar, .nav-logodiv, .menu-item{
+		display: flex;
+		flex-direction: column;
+		flex:100%;
+		align-items: center;
+		float:none; 
+	}
+}
+/* End Owner: King Hei Tam  */
+
+/***************** 
+* Owner : Qianhui Hong
+* Date  : Nov 18 (v1)
+* From  : https://dufferinconstruction.com/
+******************/
+/*Create equal columns that float next to each other. Refer to index page Featured Project section*/
+/*Layout plan inspired by Dufferin Construction Company, technical reference from W3Schools */
+
+div.imgblock {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+.imgdes {
+	height: auto;
+}
+/* End Owner: Qianhui Hong */
+
+/***************** 
+* Owner : Chi Kin Lok
+* Date  : Nov 19 (v1)
+* From  : https://www.w3schools.com/css/css_grid.asp; https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout;
+# Inspired by: https://www.mappa.com.hk/
+******************/
+
+/* Set the style for the Specialties section on index page and reduce the gaps between each other*/
+.gridelementSpecialties {
+	margin: auto;
+	padding: 0px;
+}
+
+/* Set the size of the description box for each specialties */
+.specimgdes {
+	padding: 5px 10px;
+	height: 58.4px;
+	max-width: 200px;
+}
+
+/***************** 
+* From  : https://developer.mozilla.org/en-US/docs/Web/CSS/border-image
+******************/
+/*Set a solid border around images in Database Management page*/
+.imgdatabase {
+	border: 2px ridge #000000;
+	border-radius: 48px;
+	margin: 20px auto;
+}
+/* End Owner: Chi Kin Lok */
+
+/***************** 
+* Owner : Chun Kit Chung
+* Date  : Dec 3 (v1)
+* From  : https://www.w3schools.com/cssref/css_units.php
+******************/
+/* Set the display area and style for the main content on the specialties pages */
+.specialtiesGeneric {
+	border: 3px solid blue;
+	margin: 20px 20vw;
+}
+
+/*Resize the left and right margins for the responsive design on the specialties pages*/
+@media (max-width: 1000px) {
+	.specialtieGeneric {
+		margin: 20px 10vw;
+	}
+}
+
+@media (max-width: 700px) {
+	.specialtieGeneric {
+		margin: 20px 2vw;
+	}
+}
+/* End Owner: Chun Kit Chung */
+
+/* Owner : King Hei Tam 
+Date  : Dec 4
+CSS to format the featured project text more visually 
+appealing for mobile by changing colour using a media query */
+
+.gridparagraph {
+	max-height: fit-content;
+}
+
+@media (max-width: 960px) {
+	.gridparagraph {
+		text-align: center;
+		background-color:#cf76a3; 
+	}
+}
+
+/* styling for text on page About us to make it for appealing by limiting block width*/
+.aboutustext{
+	display:block;
+	max-width: 600px;
+  	margin: auto;
+	text-align: center;
+	align-items: center; 
+}
+/* End Owner: King Hei Tam  */
+
+ /***************** 
+* Owner : Chi Kin Lok
+* Date  : Dec 3 (v1)
+* From  : https://www.w3schools.com/cssref/css3_pr_mediaquery.php; https://developer.mozilla.org/en-US/docs/Web/CSS/@media
+* Inspired by  : https://www.polosoftech.com/gis-services/gis-consultancy
+******************/
+/*Set the style for the contact us banner section at the bottom of index page*/
+#indexContactUs {
+	background-color: #cabf1f;
+	color: #1a4b78;
+	padding: 20px 20px 25px;
+	margin: 20px 0px;
+	display: grid;
+}
+
+/*Setting style for the Contact Us button at the end of the index page*/
+#contactUsButton {
+	background-color: #FFFFFF;
+	font-weight: bold;
+	font-size: 24px;
+	color: #5f7114;
+	padding: 20px;
+	margin: 20px 40vw 0px;
+	border-radius: 45px;
+}
+
+/*Responsive design: reducing the size of left and right margins when window size decreases*/
+@media (max-width: 1300px) {
+	a#contactUsButton {
+		margin: 20px 38vw 0px;
+	}
+}
+
+@media (max-width: 1100px) {
+	a#contactUsButton {
+		margin: 20px 35vw 0px;
+	}
+}
+
+@media (max-width: 900px) {
+	a#contactUsButton {
+		margin: 20px 30vw 0px;
+	}
+}
+
+@media (max-width: 650px) {
+	a#contactUsButton {
+		margin: 20px 22vw 0px;
+	}
+}
+
+@media (max-width: 499px) {
+	a#contactUsButton {
+		margin: 20px 10px 0px;
+	}
+}
+/* End Owner: Chi Kin Lok */
+
+/***************** 
+* Owner : Yin Chun Luk
+* Date  : Dec 5 
+* From  : 
+******************/
+/*General styling for blockquote*/
+/*Modified from template: https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling/ */
+blockquote {
+	background: #f8f8f8;
+	border-left: 15px solid #ccc;
+	margin: 1.5em 10px;
+	padding: 1em 10px;
+	quotes: "\201C""\201D""\2018""\2019";
+}
+blockquote:before {
+	color: #ccc;
+	content: open-quote;
+	font-size: 2em;
+	line-height: 0.1em;
+	margin-right: 0.25em;
+	vertical-align: -0.4em;
+}
+
+/*Styling for Contact Us Page: general styling, styling form in terms of size and container*/ 
+/*Modifed from template: https://www.makeuseof.com/create-contact-form-html-css-js/ */ 
+/*Sets the general font type and text/content alignment of the page */ 
+
+/* Sets up the display of contact information in the beginning of the page */
+.contactbox {
+	width: 100%;
+	padding: 40px;
+}
+
+.contactus {
+	font-family: "Mulish", sans-serif;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+/* Sets the display and organization of the information form */ 
+.form {
+	margin: 3rem 0;
+	display: flex;
+	flex-direction: column;
+	row-gap: 2rem;
+}
+
+/* Sets the display of the box for text input */ 
+.inputbox {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.5rem;
+}
+
+/* Sets the aesthetics of the textbox for paragraph-long text input, limits the resizing of the textbox */ 
+.inputbox input,
+	textarea {
+	padding: 1rem 2rem;
+	border-radius: 5px;
+	border: 1px solid #555;
+	resize: vertical;
+}
+
+/* Encloses the form in a box for better aesthetics */ 
+main {
+	width: 40rem;
+	box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.2);
+	margin: 0 auto;
+	border-radius: 2rem;
+	padding: 2rem;
+	box-sizing: border-box;
+}
+/* End Owner: Yin Chun Luk */
+
+/***************** 
+* Owner : King Hei Tam
+* Date  : Dec 4
+* CSS to style footer 
+******************/
+footer{
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	grid-row: auto;
+	background-color: #1486de;
+	color:#FFFFFF;
+	text-align: center;
+	margin-top: 0.5%;
+	padding-bottom: 2ch;
+	list-style: none;
+}
+
+.footertext{
+	display:block;
+	text-align: center;
+}
+
+@media (min-width: 600px) {
+	footer{
+		grid-template-columns: 1fr;
+		padding-left: 5%;
+		padding-right: 5%;
+	}
+}
+ /* End Owner: King Hei Tam  */

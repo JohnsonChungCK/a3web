@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Database Management</title>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+
+<!--This page introduces the company skillset in Database Management-->
+<body>
+
+<!-- -----------------
+- Owner : Chi Kin Lok
+- Date  : Dec 6 (v3)
+- From  :  https://www.w3schools.com/css/css_navbar.asp; https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav;
+- Inspired by  : https://jessicamflemingc.github.io/JMLcartolytics/index.html; https://uniekm.github.io/PTBO/index.html; 
+			https://www.mappa.com.hk/
+- Adapted from : https://cklouislok.github.io/index.html
+------------------- -->
+<!--Create a header section, which incorporates a top navigation bar containing the company logo, links to the home, about us, 
+	skills/projects, and contact us pages-->
+<!--Adapted from Assignment 2 Personal Website-->
+<header>
+    <div class="bg-img">
+        <nav class="nav-headerbar">
+            <div class="nav-logodiv">
+                <a href="index.html" id="nav-logo">CEnGISolutions</a>
+            </div>
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a href="aboutus.html">About Us</a>
+                </li>
+                <li class="menu-item">
+                    <a class="active" href="index.html#specialties">Specialties</a>
+                </li>
+                <li class="menu-item">
+                    <a href="contactus.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!--*** End Owner: Chi Kin Lok *** -->
+
+<!-- -----------------
+- Owner : Chi Kin Lok
+- Date  : Dec 6 (v3)
+- From  :  https://www.w3schools.com/css/css_border.asp
+------------------- -->
+<!-- Create a div with a width smaller than window width to contain main content -->
+<h1>Database Management</h1>
+<!-- Create a outermost div to contain the main content and images. A border will be added to the outermost div-->
+<div class="specialtiesGeneric">
+    <h2 class="center">What are Databases and Spatial Databases?</h2>
+    <!--Reference: 1. GEOM65 Spatial Databases & Geodatabase Basics by Shawn Morgan; 2. Spatial Database on Wikipedia at
+    https://en.wikipedia.org/wiki/Spatial_database-->
+    <p>
+        A database is a storage system designed to manage large datasets efficiently. Users can query and manipulate 
+        data using joins, relates, and often a Structured Query Language (SQL). 
+    </p>
+    <p>
+        A Spatial Database is a special type of standard databases, with the additional enhanced capabilities of storing 
+        and accessing spatial and location data. The additional spatial functionality enables the storage of spatial data 
+        as attribute values in a table. In a vector data model, a single spatial value is often a geometric primitive, usually 
+        in the forms of point, line, polygon, etc. Some spatial databases are also capable of storing raster data. A Spatial 
+        Database is also called a Geospatial Database, Graphic Database, or Geodatabase y Esri (the world's leading supplier 
+        of GIS software). 
+    </p>
+
+    <h2 class="center">What is Database Management?</h2>
+    <!--Reference: 1. GEOM65 Relationships, Transactions, SQL Intro by Shawn Morgan; 2. Mastering ArcGIS Pro by Maribeth H.
+    Price; 3. What is Database Management on Nutanix at https://www.nutanix.com/info/database-management-->
+    <p>
+        Database management is a series of actions for manipulating a database throughout its lifecycle to cater for data 
+        growth. It plays a crucial role in managing the size of datasets, updating datasets, controlling data accuracy, 
+        ensuring data security, removing data redundancy, and preventing data loss. A well-designed database is essential 
+        to performing GIS tasks because of its capability of efficient and effective storage and access to an extensive 
+        volume of complex spatial data.
+    </p>
+
+    <h2 class="center">Database Design and Modelling</h2>
+    <h3 class="leftalign">Why do Database Design and Modeling matter?</h3>
+    <!--Reference: 1. GEOM65 Database Modeling and Optimization by Shawn Morgan-->
+    <p>
+        Database design and modeling is a crucial stage in database management. A well-designed database is essential 
+        to performing GIS tasks because of its capability of efficient and effective storage and access to an extensive 
+        volume of complex spatial data. Having a well-structured database will protect your data, and more importantly, 
+        to save you time and resources from having to deal with all sorts of data problems. 
+    </p>
+
+    <h3 class="leftalign">Entity Relationships</h3>
+    <!--Reference: 1. GEOM65 Database Modeling and Optimization by Shawn Morgan; 2. Entity Relationship Diagram
+    by Jacqueline Biscobing on TechTarget at 
+    https://www.techtarget.com/searchdatamanagement/definition/entity-relationship-diagram-ERD-->
+    <p>
+        It is always a good practice to organize and understand the data we have at hand before designing a database. Upon 
+        listing all data by entity, i.e. by its theme, we can draw out an Entity Relationship Diagram (ERD). An ERD provides 
+        a visual reference to building a data model by clarifying the relationship between each entity. There are three
+        primary relationships between entities:
+    </p>
+    <ul>
+        <li>One to One</li>
+        <li>One to Many</li>
+        <li>Many to Many</li>
+    </ul>  
+    <img class="imgdatabase " src="images/ERD.png" alt="Entity Relationship Diagram">
+
+    <h3 class="leftalign">Relational Database and Normalization</h3>
+    <!--Reference: 1. GEOM65 Normalization by Shawn Morgan; 2. Database Normalization on Wikipedia at 
+    https://en.wikipedia.org/wiki/Database_normalization; 3. What is Normalization on Database.Guide at 
+    https://database.guide/what-is-normalization/-->
+    <p>
+        Relational Databases and Normalization are other critical concepts in database management. The goal of a relational 
+        database design is to generate a set of relation schemas that allow information storage without unnecessary redundancy, 
+        and allows the information to be retrieved easily. Normalization, on the other hand, is the process of organizing the 
+        attributes and tables of a relational database to minimize data redundancy and maximize data integrity. It also 
+        simplifies the database design in order to achieve the optimal structure composed of atomic elements, with the ultimate
+        goals to improve the speed, accuracy and efficiency of the database and information retrieval. 
+    </p>
+    <p>
+        Normalization should ideally be performed on every database. There are many levels of normalization, and each one 
+        builds on the previous level. In general, a relational database shall at least be on the third level of normalization 
+        to be efficient. Below is an example of the relationships of entities in a relational database at the Third Normal 
+        Form.
+    </p>
+    <img class="imgdatabase " src="images/DatabaseRelationships.png" alt="Example of Table Relationships in Microsoft Access">
+
+    <h2 class="center">We've Got Your Back, and Your Backup</h2>
+    <p>
+        We understand that you may already have some existing data before conducting a new session of data collection. Often, 
+        some older data is available in the forms of tables and spreadsheets, which may require a more sophisticated data 
+        storage method to consolidate the old and new data. 
+    </p>
+    <p>
+        With our professional knowledge and extensive experience in data and database management, we ensure that all GIS 
+        data collected and provided by our clients are safely, effectively, and most importantly, efficiently stored in a 
+        well-designed relational database in compliance with the best practice in the industry, with the capability of 
+        future expansion in the databases. 
+    </p>
+</div>
+<!--*** End Owner: Chi Kin Lok *** -->
+
+<!--Create a standardized footer to be used across pages -->
+<!-- -----------------
+- Owner : King Hei Tam 
+- Date  : Dec 1 (v1)
+- From  : 
+------------------- -->
+<footer>
+	<h2>Contact Us</h2>
+	<p class = "footertext">Telephone: 123-456-7890.</p>
+	<p class = "footertext">Email: info@cengisolutions.com</p>
+</footer>
+<!--*** End Owner: King Hei Tam  *** --> 
+
+</body>
+</html>

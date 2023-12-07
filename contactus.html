@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us</title>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+
+<!--This home page introduces the company skillset in Database Management-->
+<body>
+
+<!-- -----------------
+- Owner : Chi Kin Lok
+- Date  : Dec 6 (v3)
+- From  :  https://www.w3schools.com/css/css_navbar.asp; https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav;
+- Inspired by  : https://jessicamflemingc.github.io/JMLcartolytics/index.html; https://uniekm.github.io/PTBO/index.html; 
+			https://www.mappa.com.hk/
+- Adapted from : https://cklouislok.github.io/index.html
+------------------- -->
+<!--Create a header section, which incorporates a top navigation bar containing the company logo, links to the home, about us, 
+	skills/projects, and contact us pages-->
+<!--Adapted from Assignment 2 Personal Website-->
+<header>
+    <div class="bg-img">
+        <nav class="nav-headerbar">
+            <div class="nav-logodiv">
+                <a href="index.html" id="nav-logo">CEnGISolutions</a>
+            </div>
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a href="aboutus.html">About Us</a>
+                </li>
+                <li class="menu-item">
+                    <a href="index.html#specialties">Specialties</a>
+                </li>
+                <li class="menu-item">
+                    <a class="active" href="contactus.html">Contact Us</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!--*** End Owner: Chi Kin Lok *** -->
+
+<!-- -----------------
+- Owner : Yin Chun Luk
+- Date  : Nov 26
+- From  : 
+------------------- -->
+<!-- Contact information of the CEnGISolution, organized by headings and paragraphs-->
+<div class="contactus">
+	<h1> Contact Us </h1>
+	Chung, Hong, Lok, Luk, and Tam, the founders of CEnGISolution, are passionate about everything GIS. 
+	<div class="contactbox">
+	        <h2> Contact information </h2>
+	        <h2> Address </h2>
+	        <p class="contactus"> 200 Albert St S, Lindsay, ON </p>
+	        <h2> Phone number </h2>
+	        <p class="contactus"> 123 456 7890 </p>
+	        <h2> Email </h2>
+	        <p class="contactus"> CEnGISolution@gmail.com </p>
+   	 </div>
+</div>
+
+<!-- Modified from the form submission template on W3Schools: 
+ https://www.w3schools.com/howto/howto_css_contact_section.asp;
+ Includes a dropdown menu for choosing options of form submission through option tags;
+ Includes textboxes for entering personal information, placeholders and message message box next to an empty submit button-->
+ <main>
+    <div class="contactus">
+    <div class="messageheader">
+        <h2>Got a question? Got a project idea in mind?</h2>
+        <p class="contactus">Give us a problem and we will give you a solution.</p>
+    </div>
+    <div class="globeimage">
+        <img src="images/globe.png" alt="Image of the globe">
+    </div>
+    <form>
+        <div class="message">
+            <label for="message">Leave us a message:</label>
+            <select id="message" name="message">
+                <option value="General inquiry">General inquiry</option>
+                <option value="Request for quotation">Request for quotation</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+        <div class="inputbox">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name...">
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name...">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="lastname" placeholder="Your email...">
+            </div>
+        <div class="inputbox">
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Your message..."></textarea>
+            <input type="submit" value="Submit">
+        </div>
+        </form>
+    </div>
+</main>
+
+<!--*** End Owner: Yin Chun Luk *** -->
+
+<!--Create a standardized footer to be used across pages -->
+<!-- -----------------
+- Owner : King Hei Tam 
+- Date  : Dec 1 (v1)
+- From  : 
+------------------- -->
+<footer>
+	<h2>Contact Us</h2>
+	<p class = "footertext">Telephone: 123-456-7890.</p>
+	<p class = "footertext">Email: info@cengisolutions.com</p>
+</footer>
+<!--*** End Owner: King Hei Tam  *** --> 
+
+</body>
+</html>

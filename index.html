@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Home</title>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+
+<!--This home page includes a brief introduction of our company-->
+<body>
+
+<!-- -----------------
+- Owner : Chi Kin Lok
+- Date  : Dec 6 (v3)
+- From  :  https://www.w3schools.com/css/css_navbar.asp; https://developer.mozilla.org/en-US/docs/Web/HTML/Element/nav;
+- Inspired by  : https://jessicamflemingc.github.io/JMLcartolytics/index.html; https://uniekm.github.io/PTBO/index.html; 
+			https://www.mappa.com.hk/
+- Adapted from : https://cklouislok.github.io/index.html
+------------------- -->
+<!--Create a header section, which incorporates a top navigation bar containing the company logo, links to the home, about us, 
+	skills/projects, and contact us pages-->
+<!--Adapted from Assignment 2 Personal Website-->
+<header>
+	<div class="bg-img">
+		<nav class="nav-headerbar">
+			<div class="nav-logodiv">
+				<a href="index.html" id="nav-logo">CEnGISolutions</a>
+			</div>
+			<ul class="menu-list">
+				<li class="menu-item">
+					<a class="active" href="index.html">Home</a>
+				</li>
+				<li class="menu-item">
+					<a href="aboutus.html">About Us</a>
+				</li>
+				<li class="menu-item">
+					<a href="index.html#specialties">Specialties</a>
+				</li>
+				<li class="menu-item">
+					<a href="contactus.html">Contact Us</a>
+				</li>
+			</ul>
+        </nav>
+    </div>
+</header>
+<!--*** End Owner: Chi Kin Lok *** -->
+
+<h1>We Are CEnGISolutions</h1>
+<h2 class="center">Your Dependable GIS Solutions Partner</h2>
+
+
+<!-- -----------------
+- Owner : Chi Kin Lok
+- Date  : Dec 2 (v3)
+- From  : https://www.w3schools.com/css/css_grid.asp; https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout;
+- Inspired by: https://www.mappa.com.hk/; https://dufferinconstruction.com/; https://www.linkreit.com/en/; https://www.polosoftech.com/gis-services/gis-consultancy
+------------------- -->
+<!--Brief introduction of company-->
+<!-- outermost gridlayout contains gridelement, and gridelement contains imgblock for inserting image, and imgdes for inserting image description-->
+<div class="gridlayout"> 
+	<div class="gridelement">
+		<div class="imgblock">
+			<img src="images/CompanyAttributes.png" alt="Company Attributes">
+		</div>
+		<div class="imgdes">
+			<h2>Why Choose CEnGISolutions?</h2>
+			<p>CEnGISolution is a professional GIS consulting firm with a diversity of specialties. We have a proven track record in 
+				providing professional GIS services to a variety of organizations and companies. Our consistent clients include 
+				government agencies, construction companies, engineering companies, universities and colleges, research institutes, 
+				and many more.
+			</p>
+		</div>
+	</div>
+	<div class="gridelement">
+		<div class="imgblock">
+			<img id="ESG" src="images/ESG.png" alt="ESG">
+			<!--E<a href="https://www.flaticon.com/free-icons/green" title="green icons">Green icons created by Eucalyp - Flaticon</a>-->
+			<!--S<a href="https://www.flaticon.com/free-icons/team" title="team icons">Team icons created by Eucalyp - Flaticon</a>-->
+			<!--G<a href="https://www.flaticon.com/free-icons/building" title="building icons">Building icons created by Eucalyp - Flaticon</a>-->
+		</div>
+		<div class="imgdes">
+			<h2>Our Missions</h2>
+			<p>
+				Regardless of the work culture, we are always ready to supplement our clients' work structure. We strive to remain on top of
+				the GIS industry and provide our clients with cutting-edge GIS tools and technologies. Not only do we aim to bring 
+				success in a project to our clients, but also sustainable success in the future. 
+			</p>	
+			<p>
+				Not only do we care about our clients' success, we are also committed to building long-term sustainability for our 
+				environment, society and governance.
+			</p>
+		</div>
+	</div>
+	<div class="gridelement">
+		<div class="imgblock">
+			<a href="#specialties"> <!-- Make the image a hyperlink to the Specialties section on the index page -->
+				<img id="GISConsultancy" src="images/GISConsultancy.png" alt="GIS Consulting Services">
+			</a>
+		</div>
+		<div class="imgdes">
+			<h2>What we do?</h2>
+			<p>
+				We listen to our clients' needs and provide quality customized GIS consulting services to our clients. 
+				We offer a wide range of GIS consulting services, including land surveying, remote sensing, database management, spatial 
+				analysis, geo-visualization, workflow automation, web design, and many more. 
+			</p>
+			<p>
+				Clients can choose to be involving, or completely carefree in the consulting processes.
+			</p>
+		</div>		
+	</div>
+</div>
+<!--*** End Owner: Chi Kin Lok *** -->
+
+<!-- -----------------
+- Owner : Chi Kin Lok
+- Date  : Dec 2 (v3)
+- From  : https://www.w3schools.com/html/html_links_bookmarks.asp
+- Inspired by : https://www.mappa.com.hk/
+------------------- -->
+<!--Create a bookmark to this section. The browser will jump to this section on the index page when user clicks on the specialties 
+button on nav bar or the GISConsultancy picture at the brief intro section-->
+<h1 id="specialties">Our Specialties</h1>
+<!--*** End Owner: Chi Kin Lok *** -->
+
+<!--Create a section introducing the company's specialties in a grid format with 7 items-->
+<!-- -----------------
+- Owner : King Hei Tam
+- Date  : Dec 2 (v3)
+- From  : Referenced from W3schools 
+------------------- -->
+<!--Create a 7-grid container, showcasing the specialties of our company. Each icon is a link to the relevant webpage.-->
+<div id="gridlayoutSpec" class="gridlayout">
+	<div class="gridelementSpecialties">
+		<div class="imgblock">
+			<a href="skill_webdesign.html">
+				<img src="images/webdesign.png" alt="Web Design">
+				<!--<a href="https://www.flaticon.com/free-icons/website" title="website icons">Website icons created by PIXARTIST - Flaticon</a>-->
+			</a>
+		</div>
+		<div class="specimgdes">
+			<h3>Web Design</h3>
+		</div>
+	</div>
+	<div class="gridelementSpecialties">
+		<div class="imgblock">
+			<a href="skill_databasemanagement.html">
+				<img class="imgcenter" src="images/database.png" alt="Database Management">
+			<!--<a href="https://www.flaticon.com/free-icons/database" title="database icons">Database icons created by PIXARTIST - Flaticon</a>-->
+			</a>
+		</div>
+		<div class="specimgdes">
+			<h3>Database Management</h3>
+		</div>
+	</div>
+	<div class="gridelementSpecialties">
+		<div class="imgblock">
+			<a href="skill_workflowautomation.html">
+				<img src="images/automation.png" alt="Workflow Automation">
+				<!--<a href="https://www.flaticon.com/free-icons/rpa" title="rpa icons">Rpa icons created by PIXARTIST - Flaticon</a>-->
+			</a>
+		</div>
+		<div class="specimgdes">
+			<h3>Workflow Automation</h3>
+		</div>		
+	</div>
+	<div class="gridelementSpecialties">
+		<div class="imgblock">
+			<a href="skill_remotesensing.html">
+				<img src="images/remotesensing.png" alt="Remote Sensing">
+				<!--<a href="https://www.flaticon.com/free-icons/maps-and-location" title="maps and location icons">Maps and location icons created by Eucalyp - Flaticon</a>-->
+			</a>
+		</div>
+		<div class="specimgdes">
+			<h3>Remote Sensing</h3>
+		</div>
+	</div>
+	<div class="gridelementSpecialties">
+		<div class="imgblock">
+			<a href="skill_surveying.html">
+				<img src="images/surveying.png" alt="Land Surveying">
+				<!--<a href="https://www.flaticon.com/free-icons/construction" title="construction icons">Construction icons created by Eucalyp - Flaticon</a>-->
+			</a>
+		</div>
+		<div class="specimgdes">
+			<h3>Land Surveying</h3>
+		</div>
+	</div>
+	<div class="gridelementSpecialties">
+		<div class="imgblock">
+			<a href="skill_spatialanalysis.html">
+				<img src="images/analysis.png" alt="Spatial Analysis">
+				<!--<a href="https://www.flaticon.com/free-icons/dashboard" title="dashboard icons">Dashboard icons created by Eucalyp - Flaticon</a>-->
+			</a>
+		</div>
+		<div class="specimgdes">
+			<h3>Spatial Analysis</h3>
+		</div>
+	</div>
+	<div class="gridelementSpecialties">
+		<div class="imgblock">
+			<a href="skill_datavisualization.html">
+				<img src="images/visualization.png" alt="datavisualization">
+				<!--<a href="https://www.flaticon.com/free-icons/region" title="region icons">Region icons created by PIXARTIST - Flaticon</a>-->
+			</a>
+		</div>
+		<div class="specimgdes">
+			<h3>Data Visualization</h3>
+		</div>
+	</div>
+</div>
+<!--*** End Owner: King Hei Tam *** -->
+
+<!-- -----------------
+- Owner : Chi Kin Lok
+- Date  : Dec 1 (v2)
+- From  : https://www.w3schools.com/css/css_grid.asp; https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout; 
+- Inspired by: https://www.mappa.com.hk/; https://dufferinconstruction.com/; https://www.linkreit.com/en/; https://www.polosoftech.com/gis-services/gis-consultancy
+------------------- -->
+<!-- Introduce featured projects -->
+<!-- Two-column grids x 3-->
+<!-- outermost gridlayout contains gridelement, and gridelement contains imgblock for inserting image, and imgdes for inserting image description-->
+<h1>Featured Projects</h1>
+<div class="gridlayout">
+	<div class="center">
+		<div class="imgblock">
+			<img src="images/TotalStation.jpg" alt="Traverse Leveling using Total Station during Fleming College Survey Camp in late-October 2023">
+		</div>
+	</div>
+	<div class="gridparagraph">
+		<div class="imgdes">
+			<h2 class="leftalign">Education Partnerships</h2>
+			<p>
+				Embarking on a journey of knowledge empowerment, CEnGISolutions is proud to unveil our 
+				dedicated Educational Partnerships section. Rooted in the belief that collaboration is the 
+				cornerstone of progress, we are committed to forging strong alliances with educational institutions. 
+				Our mission is to bridge the gap between academia and industry, fostering a dynamic environment where 
+				students and educators alike can explore the vast potential of GIS technology.
+			</p>
+			<p>
+				Through these partnerships, we aim to contribute to the growth of GIS expertise by providing resources, 
+				mentorship, and real-world insights. Together, we can cultivate the next generation of geospatial leaders, 
+				empowering them with the tools and knowledge to navigate the evolving landscape of spatial intelligence. 
+				Join us in this educational odyssey, where learning becomes a collaborative adventure, and together, 
+				we map out a brighter future."
+			</p>	
+			<p>
+				Our team partnered with Fleming College in late-October 2023 and provided training on traverse surveying
+				during their annual survey camp. Fundamental surveying skills, equipment knowledge, industry 
+				standards, and work ethics are taught to Fleming students with a hands-on experience in conducting 
+				an interior angle closed traverse field survey.  
+			</p>
+			<p>
+				As a visionary developed GIS consulting company, we have been partnering with Fleming College and many 
+				other educational institutions for years to nurture young talents who are devoted to or passionate about 
+				GIS. We spare no effort in support the growth of the GIS industry.
+			</p>
+		</div>		
+	</div>
+</div>
+<div class="gridlayout">
+	<div class="center">
+		<div class="imgblock">
+			<img src="images/MapLanduseHalifax.png" alt="Landuse Map of Halifax Regional Municipality, Nova Scotia">
+		</div>
+	</div>
+	<div class="gridparagraph">
+		<div class="imgdes">
+			<h2 class="leftalign">Land Use Mapping for Local Municipalities</h2>
+			<p>Discover a world of precision and purpose with CEnGISolutions's Maps for Businesses and 
+			Local Municipalities. At the intersection of art and science, our cartography experts bring maps to life, 
+			transforming geographical data into actionable insights for businesses and communities.
+			</p>
+			<p>
+			For businesses, our maps serve as strategic tools, unlocking spatial patterns and market dynamics to guide 
+			decision-making. Local municipalities benefit from our expertise in crafting maps that enhance urban planning, 
+			infrastructure development, and community engagement.
+			</p>
+			<p>
+			At CEnGISolutions, we go beyond the boundaries of traditional mapping, leveraging cutting-edge 
+			technology to create visual narratives that empower businesses and municipalities alike. 
+			Join us in navigating the future with maps that not only showcase geographical landscapes but also 
+			illuminate pathways to success and sustainable growth.
+			</p>
+			<p>
+				We provide professional geo-data visualization for our clients. One of our diverse mapping expertise 
+				is to create land use map at local, regional, and national levels. We have partnerships with many local 
+				municipalities across Canada, including City of Toronto, City of Markham, Halifax Regional Municipality, 
+				City of Kawartha Lakes, and many more. 
+			</p>
+			<p>
+				A detailed land use map often comes before a comprehensive development plan. It will facilitate the land use
+				planning process and we are proud to have been involved in the process. We also have an extensive archive
+				of land use maps at the city level.
+			</p>
+		</div>		
+	</div>
+</div>
+<div class="gridlayout">
+	<div class="center">
+		<div class="imgblock">
+			<img src="images/DatabaseProject.png" alt="Tree Database Project">
+		</div>
+	</div>
+	<div class="gridparagraph">
+		<div class="imgdes">
+			<h2 class="leftalign">City-level Tree Databases</h2>
+			<p>Welcome to the heart of spatial information excellence at CEnGISolutions.
+			   Our Database Creation division stands as the bedrock of our commitment to transforming raw data 
+			   into actionable insights. With a focus on precision, efficiency, and innovation, we specialize in crafting 
+			   robust databases tailored to the unique needs of the GIS field.
+			</p>
+			<p>At CEnGISolutions, we understand the pivotal role that well-organized spatial data plays in 
+				driving informed decisions. Our team of experts is dedicated to designing and implementing cutting-edge 
+				database solutions that not only streamline data management but also unlock the full potential of 
+				geospatial intelligence. Join us in the pursuit of seamless, data-driven experiences, where every 
+				database we create is a key to unlocking new dimensions in GIS innovation.
+			</p>
+			<p>
+				In Fall 2023, the City of Kawartha Lakes conducted a city-wide public tree survey in the region. We were 
+				hired to help set up the online survey platform for members of the public to collect data. After the 
+				data collection process, we perform data processing and conversion, and store the collected data in a 
+				well-structured database with professional database management software. Within the database, quality check
+				and control are performed. The relevant tree database is now available for public use on the website of 
+				the City of Kawartha Lakes.
+			</p>
+			<p>
+				Similar projects are also ongoing in many other cities across Canada.
+			</p>
+		</div>		
+	</div>
+</div>
+<!--*** End Owner: Chi Kin Lok *** -->
+
+<!-- -----------------
+- Owner : Chi Kin Lok
+- Date  : Dec 3 (v1)
+- Inspired by  : https://www.polosoftech.com/gis-services/gis-consultancy
+------------------- -->
+<!-- Create a block level banner containing a link to the Contact Us page -->
+<h1 id="indexContactUs">
+	Looking for Quality GIS Consulting Services? <a id="contactUsButton" href="contactus.html">Get In Touch</a>
+</h1>
+<!--*** End Owner: Chi Kin Lok *** -->
+
+<!--Create a standardized footer to be used across pages -->
+<!-- -----------------
+- Owner : King Hei Tam 
+- Date  : Dec 1 (v1)
+- From  : 
+------------------- -->
+<footer>
+	<h2>Contact Us</h2>
+	<p class = "footertext">Telephone: 123-456-7890.</p>
+	<p class = "footertext">Email: info@cengisolutions.com</p>
+</footer>
+<!--*** End Owner: King Hei Tam  *** -->
+
+</body>
+</html>
